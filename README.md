@@ -1,32 +1,80 @@
-# React + TypeScript + Vite
+# arriva Enquiry Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## 🔗 Link to Access
 
-Currently, two official plugins are available:
+https://arriva-enquiry-landing-page.pages.dev/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+Responsive enquiry landing page developed for the arriva front-end coding test using React, TypeScript and custom CSS.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Functionalities
 
-## Expanding the Oxlint configuration
+* Sticky header with arriva logo and enquiry button.
+* Smooth navigation through the landing page.
+* Community carousel featuring:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+  * Strathfield
+  * Chippendale
+  * Camperdown
+  * St Peters
+  * Homebush
+  * Beaconsfield
+* Automatic carousel transitions and manual navigation controls.
+* Community name, address and description displayed for each location.
+* Features section with responsive cards, custom icons and hover effects.
+* Enquiry form with validation for:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+  * Full name
+  * Email
+  * Australian phone number
+  * Community
+  * Preferred move-in date
+  * Message with 500-character limit
+* Inline validation messages.
+* Confirmation message after successful submission.
+* Option to send another enquiry without refreshing the page.
+* Responsive design for mobile, tablet and desktop.
+* Footer with contact information and social media links.
+* Footer logo returns the user to the top of the page.
+
+## ⚙️ Setup
+
+Clone this repository. Node.js and npm are required.
+
+Installation:
+
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Start the project:
+
+```bash
+npm run dev
+```
+
+Production build:
+
+```bash
+npm run build
+```
+
+## 🛠 Technologies
+
+* React
+* TypeScript
+* Vite
+* CSS
+* HTML
+
+## 📷 Images
+
+<img width="1903" height="909" alt="image" src="https://github.com/user-attachments/assets/2cfe65cb-0c4c-478b-b92a-826d27df6750" />
+<img width="1902" height="884" alt="image" src="https://github.com/user-attachments/assets/3753df66-4f46-4689-9c5f-ed531211f9ad" />
+<img width="1900" height="911" alt="image" src="https://github.com/user-attachments/assets/28b97c4d-c13a-464c-8cf4-4ba28e6de7f0" />
+<img width="1902" height="912" alt="image" src="https://github.com/user-attachments/assets/b5e1f552-72c1-40df-b946-da09c8c74452" />
+
+
+
+
