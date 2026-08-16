@@ -72,22 +72,36 @@
   padding: 14px 16px;
   border: 1px solid var(--color-border);
   border-radius: 12px;
+
   background-color: var(--color-surface);
   color: var(--color-text);
   outline: none;
+
+  font-size: 1rem;
 
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
 
+.form-field input,
+.form-field select {
+  min-height: 52px;
+}
+
 .form-field input[type="date"] {
   width: 100%;
   max-width: 100%;
   min-width: 0;
+  min-height: 52px;
   box-sizing: border-box;
+
   -webkit-appearance: none;
   appearance: none;
+}
+
+.form-field input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
 }
 
 .form-field input:focus,
@@ -131,10 +145,13 @@
   width: 100%;
   min-height: 52px;
   padding: 0.9rem 1.5rem;
+
   border: 0;
   border-radius: 999px;
+
   background-color: var(--color-primary);
   color: #fff;
+
   font-weight: 700;
   cursor: pointer;
 
@@ -218,5 +235,17 @@
 
   .form-field--full {
     grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enquiry-form__submit,
+  .enquiry__new-enquiry {
+    transition: none;
+  }
+
+  .enquiry-form__submit:hover,
+  .enquiry__new-enquiry:hover {
+    transform: none;
   }
 }
